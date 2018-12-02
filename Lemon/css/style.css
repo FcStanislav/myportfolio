@@ -1,0 +1,793 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eaeaea;
+}
+*:before, *:after {
+	box-sizing: border-box;
+}
+button {
+	border: 1px solid rgb(194, 194, 194);
+	padding: 5px 10px;
+	background-color: #fff;
+	font-size: 12px;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+button:hover {
+	cursor: pointer;
+	background-color: rgb(0, 0, 0);
+	color: #fff;
+
+}
+.btn {
+	border: 1px solid rgb(194, 194, 194);
+	padding: 5px 10px;
+	font-size: 12px;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.btn:hover {
+	background-color: rgb(0, 0, 0);
+	color: #fff;
+}
+
+/*Голова*/
+.naw-menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	height: 650px;
+	position: relative;
+}
+.navigation {
+	position: relative;
+	height: 120px;
+	margin: 0 auto;
+	width: 1121px;
+   box-shadow: 0px 0px 13px 0px rgba(11, 12, 12, 0.15);
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color:#fff;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.navigation-list {
+	width: 50%;
+	height: 100%;
+}
+.navigation-list > ul {
+	display:flex;
+	justify-content: center;
+	
+}
+.navigation-list > ul > li > a {	
+	margin-top: 50px;
+	margin-bottom: 52px;
+	color: #000000;
+	margin-right: 15px;
+	display:block;	
+	font-size: 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	transform: translateY(5px);
+}
+.dop-menu_active > a{
+	margin-bottom: 5px;
+}
+.navigation-list>ul>li:first-child{
+	margin-left: 0;
+}
+.navigation-list>ul>li:hover{
+	border-bottom: 2px solid #000;	
+}
+.navigation-list>ul>li:nth-child(2):hover{
+	border-bottom:none;
+}
+.dop-menu {
+	display: none;
+	position: absolute;
+	top: 70px;	
+	z-index: 1;
+}
+.dop-menu li>a {
+	background-color: rgb(241, 241, 241);
+	color: #000000;
+	display: block;
+	text-decoration: none;
+	font-size: 16px;
+	opacity: 0.9;
+	padding: 15px 15px 10px 5px;
+	border-bottom: 1px solid rgb(214, 214, 214);
+	transition: 0.3s;
+}
+.dop-menu li>a:hover {
+	background-color: #fff;
+}
+.dop-menu li:last-child a {
+	border: none;
+}
+.dop-menu_active:hover .dop-menu {
+	display: block;
+}
+.find-recipe {
+	position: relative;
+}
+.find-recipe input {
+	border: 1px solid #e5e5e5;
+	padding:5px 5px 5px 25px;
+	border-radius: 2px;
+	width: 130px;
+}
+.find-recipe label {
+	top: 6px;left: 5px;
+	position: absolute;
+}
+/*Начало 2 блока---------------------*/
+.main-second-content {
+	margin: 0 auto;
+	width: 1121px;
+	background-color: #f6f6f6;
+	position: relative;
+}
+.second-contant {
+	box-shadow: 0px 0px 13px 0px rgba(11, 12, 12, 0.15);
+	margin: 0 auto;
+	margin-top: 80px;
+	width: 1121px;
+	height: 440px;
+	background: url("../img/second-block/Second-image.png") no-repeat right;
+}
+.second-text {
+   position: absolute;
+	top:50px;
+	left:50px;
+}
+.second-main-text {
+	font-size: 24px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	font-family: 'Playfair Display', serif;
+	color:#911026;
+	font-weight: bold;
+
+}
+
+.second-text-two {
+	width: 325px;
+	margin-bottom: 20px;
+}
+.second-text-two span {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
+	color:#000000;
+
+}
+
+
+
+/*Начало 3 блока----------------------------------------*/
+
+.img-blocks {
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 85px auto;
+	width: 1121px;
+	height: 375px;
+}
+
+.img-block-wrapper {
+	width: 313px;
+	height: 208px;
+	overflow: hidden;
+}
+.img-block img {
+	transition: 0.3s all ease;
+}
+.img-block img:hover {
+	transform: scale(1.1);
+	opacity: 0.5;
+}
+.img-block p{
+	font-size: 18px;
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: 300;	
+	line-height: 1.3rem;
+	margin-bottom: 5px;
+}
+.block-fixed {
+	transform: translateY(9px);
+}
+.img-block i {
+	color: #555555;
+	font-size: 12px;
+	margin-right: 5px;
+}
+/*Начало 4 блока----------------------------------------*/
+.recipe {
+	position: relative;
+	margin: 80px auto;
+	width: 1121px;
+	height: 440px;
+	background: url("../img/recipe.png") no-repeat left;
+}
+.recipe-img {
+	display: inline-block;
+	height: 440px;
+	width: 520px;
+	margin-right: -4px;
+}
+.recipe-img i {
+	position: absolute;
+	top: 0;
+	right: 621px;
+	font-size: 26px;
+	background-color: rgba(0, 0, 0, 0.502);
+	padding: 17px 13px;
+	color: white;
+}
+.recipe-text {
+	background-color: #fff;
+	box-sizing:border-box;
+	display: inline-block;
+	height: 440px;
+	width: 601px;
+	padding: 40px;
+}
+.recipe-text-wrapper {
+	position: absolute;
+}
+.recipe-text-wrapper p {
+	font-size: 16px;
+	font-family: 'Myriad Pro', sans-serif;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: black;
+	font-weight: bold;
+}
+.recipe-text-wrapper{
+	width: 495px;
+	height: 370px;
+	overflow-y: scroll;
+}
+.recipe-text-wrapper span {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
+	color:#000000;
+}
+.text-wrapper {
+	margin-bottom: 30px;
+	color: #555555;
+}
+.text-wrapper a {
+	position: absolute;
+	right: 30px;
+	top: 60px;
+}
+.text-wrapper img {
+	margin-right: 10px;
+}
+
+/*Изменяем скролл прокрутки */
+.recipe-text-wrapper::-webkit-scrollbar {
+    width:3px;
+}
+.recipe-text-wrapper::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #555555;
+}
+.recipe-text-wrapper::-webkit-scrollbar-track{
+	 background-color: #e5e5e5;
+}
+/*Начало 5 блока----------------------------------------*/
+.block-five {
+	margin: 80px auto;
+	width: 1121px;
+	height: 520px;
+	display: flex;
+	justify-content: space-between;
+}
+.five {
+	box-sizing: border-box;
+	padding: 20px;
+	width: 520px;
+	height: 520px;
+	background-color: white;
+
+}
+.error-block {
+	background: url("../img/Eror.png") no-repeat center;
+	position: relative;
+	
+}
+
+.error-block>p {
+	margin-left: 10px;
+	font-size: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.error-block a {
+	position: absolute;
+	bottom: 50px;
+	left:43%;
+	padding: 7px 25px;
+	font-weight: bold;
+
+}
+.error-block-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
+}
+.error-block-wrapper p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 34px;
+	font-weight: bold;
+}
+.error-block-wrapper span {
+	font-size: 16px;
+	color: #a9a9a9;
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+.block-author {
+	position: relative;
+}
+.block-author>p{
+	font-size: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	margin-left: 10px;
+}
+.author-img {
+	display: inline-block;
+	margin-right: -4px;
+	vertical-align: top;
+	margin-top: 30px;
+}
+.block-author-wrapper {
+	font-family: 'Josefin Sans', sans-serif;
+	margin-left: 20px;
+	margin-top: 30px;
+	display: inline-block;
+	width: 330px;
+}
+.block-author-wrapper p {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.block-author-wrapper> p.name {
+	font-weight: bold;
+	font-size: 24px;
+	
+}
+.block-author-wrapper> p.about-lemon {
+	font-size: 20px;
+	margin:20px 0;
+
+}
+.block-author-wrapper span {
+	font-size: 14px;
+}
+.signature {
+	position: absolute;
+	bottom: 35px;
+	right: 40px;
+}
+/*Начало 6 блока----------------------------------------*/
+.sidebars {
+	width: 1025px;
+	height: 1050px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+
+}
+.sidebar {
+	box-sizing: border-box;
+	width: 289px;
+	background-color: #fff;
+	box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+}
+
+.chichi-block {
+	height: 350px;
+}
+.target {
+	margin-top: 50px;
+	height: 470px;
+}
+.sidebar-recipe {
+	height: 430px;
+	margin-bottom: 50px;
+}
+.tags {
+	height: 160px;
+	margin-bottom: 45px;
+}
+.calendar {
+	padding: 35px 40px;
+	height: 370px;
+}
+.popular-now {
+	height: 349px;
+	background: url(../img/sidebar/popular-now.png) no-repeat center;
+}
+.timeline {
+	margin-top: 50px;
+	height: 430px;
+}
+/*1 block*/
+.chichi-header {
+	padding-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 45px;
+	color: #055555;
+	font-family: 'Playfair Display', serif;
+	font-size: 22px;
+	font-weight: bold;
+}
+.chichi-img {
+	margin-left: 25px;
+	display: inline-block;
+	margin-right: -4px;
+}
+.chichi-text {
+	line-height: 1.3rem;
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom: 11px;
+}
+.chichi-text p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+}
+.chichi-text span {
+	display: block;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.chichi-text i {
+	margin-right:7px;
+}
+/*2 сайдбар*/
+.target {
+	position: relative;
+}
+.public-p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: italic;
+	font-size: 20px;
+	color: black;
+	padding-top: 35px;
+	margin-left: 20px;
+}
+.public-img {
+	position: absolute;
+	top:35px;
+	right: 20px;
+}
+.present-line {
+	margin-left: 30px;
+
+}
+.present-line>p {
+	color: #055555;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.present-line img {
+	float: left;
+	margin-right: 25px;
+}
+.line{
+	width: 225px;
+	margin-bottom: 45px;
+}
+.line p {
+	font-size: 18px;
+	font-family: 'Josefin Sans', sans-serif;
+	color:#555555;
+}
+.line span {
+	font-size: 14px;
+	font-style: italic;
+	color:black;
+	font-weight: 300;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+/* 2 сайдбар */
+.sidebar-two {
+	position: relative;
+}
+.sidebar-two-level-select {
+	display: flex;
+	justify-content: space-around;
+	width: 200px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+.sidebar-two-level-select > p {
+	text-transform: uppercase;
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 12px;
+}
+.sidebar-two-level-select >p:first-child {
+	font-weight: bold;
+}
+.sidebar-two-contents {
+	padding: 0 20px;
+	
+}
+.sidebar-two-content {
+	margin-bottom: 25px;
+}
+.sidebar-two-content img{
+	display: inline-block;
+	margin-right: 6px;
+	vertical-align: top;
+}
+.sidebar-two-content-text {
+	display: inline-block;
+	width: 190px;
+	font-size: 12px;
+}
+.sidebar-two-content-text strong {
+	font-weight: bold;
+	
+}
+.sidebar-two-content-text p {
+	margin-top: 5px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.sidebar-recipe button {
+	position: absolute;
+	right: 25px;
+}
+/* Tags */
+.tags {
+	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.tags-p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: italic;
+	font-size: 20px;
+	color: black;
+}
+.tag {
+	width: 249px;
+}
+.tag ul li {
+	display: inline-block;
+	font-family: 'Krub', sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	margin-right: 5px;
+	line-height: 1.35rem;
+}
+.tag ul li::before {
+	content: "#";
+	margin-right:3px;
+}
+/*Календарь*/
+#calendar2 {
+  width: 100%;
+  height: 100%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+ }
+#calendar2 thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color: rgb(50, 50, 50);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar2 tbody td {
+  color: rgb(44, 86, 122);
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar2 tbody td.today {
+  background: rgb(220, 0, 0);
+  color: #fff;
+}
+/* 3 сайдбар */
+.popular-now {
+	padding: 0 20px;
+}
+.popular-now-text h3 {
+	padding-top: 25px;
+	margin-bottom: 45px;
+	font-size: 32px;
+	color: #921026;
+	font-weight: bold;
+}
+.popular-now-text h4 {
+	font-family: 'Josefin Sans', sans-serif;
+   font-size: 22px;
+	color:black;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.popular-now-text p {
+	font-family: 'Josefin Sans',sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color:#2c2c2c;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+.timeline {
+	padding: 40px 20px;
+	position: relative;
+}
+.tineline-content {
+	padding:0 10px;
+}
+.timeline-p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: italic;
+	font-size: 20px;
+	color: black;
+}
+.timeline-img {
+	cursor: pointer;
+	position: absolute;
+	right: 25px;top: 45px;
+}
+.tineline-content-img img {
+	margin-right: 50px;
+}
+.tineline-content-img img:nth-child(3) {
+	margin-right: 0;
+}
+.tineline-content h4 {
+	margin-top: 15px;
+	font-size: 26px;
+	color: #198585;
+	font-weight: bold;
+}
+.tineline-content p {
+	margin-top: 15px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	color: #6a6a6a;
+}
+/* КОНЕЕЕЕЕЕЕЕЕЕЕЕЕЦ САЙДБАРОВ АЛЕЛУЯ БРАТЬЯ И СЕСТРЫ МОИ Я ЭТО СДЕЛАЛ */
+.block-form {
+	display: flex;
+	justify-content: space-between;
+	margin: 80px auto;
+	width: 745px;
+	height: 540px;
+	
+}
+.form{
+	font-family:'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+	padding:20px 30px;
+	width: 330px;
+	background-color: #fff;
+}
+.form h4 {
+	font-size: 20px;
+}
+.form p {
+	font-size: 16px;
+	color: #858585;
+}
+.form i{
+   cursor: pointer;
+	font-size: 22px;
+}
+.form-icons {
+	width: 44px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.form-content h5 {
+	font-size: 16px;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+.form-content input {
+	box-sizing: border-box;
+	border: 1px solid #b4b4b4;
+	padding: 10px 20px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.form-content input.checked {
+	width: 13px;
+}
+.form-content p {
+	font-size: 12px;
+	color: #858585;
+	font-style: italic;
+	display: inline-block;
+	width: 120px;
+}
+.form-content span {
+	font-size: 12px;
+	color: #858585;
+}
+.form-btn {
+	margin-left:50%;
+	transform: translateX(-50%);
+	margin-top: 35px;
+	margin-bottom: 25px;
+	
+}
+.log-in {
+	height: 405px;
+}
+
+/* footer */
+footer {
+	color: #FFF;
+	height: 180px;
+	background-color: #2f2f2f;
+}
+.footer-navigation {
+	position: relative;
+	margin-top: 30px;
+	height: 120px;
+	width: 1121px;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.footer-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	position: relative;
+}
+.footer-navigation-list li {
+	display: inline-block;
+	margin-right: 5px;
+}
+.footer-navigation-list li a {
+	color: #FFF;
+	text-decoration: none;
+	
+}
