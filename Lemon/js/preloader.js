@@ -4,6 +4,6 @@ document.body.onload = function() {
       if (!preloader.classList.contains('done')) { // если у прелоадера нету класса done
          preloader.classList.add('done')
       }      
-   }, 200);
+   }, 0);
    
 }
