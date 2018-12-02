@@ -7,7 +7,7 @@ body {
 	background-color: #eeeeee;
 }
 .main-wrapper {
-	background: url("../images/Color Fill 1.png") no-repeat center;
+	background: url("../images/Color Fill 1.jpg") no-repeat center;
 	background-size: cover;
 	position: relative;
 }
@@ -99,7 +99,7 @@ body {
 	background-size: cover;
 	width: 600px;
 	height: 320px;
-	background: url("../images/Rounded-Rectangle.png") no-repeat center ;	
+	background: url("../images/Rounded-Rectangle.jpg") no-repeat center ;	
 	
 }
 .main-movie-overlay {
