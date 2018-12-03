@@ -758,11 +758,7 @@ button:hover {
 }
 
 /* footer */
-footer {
-	color: #FFF;
-	height: 180px;
-	background-color: #2f2f2f;
-}
+
 .footer-navigation {
 	position: relative;
 	margin-top: 30px;
@@ -775,6 +771,11 @@ footer {
 	font-family: 'Josefin Sans', sans-serif;
 }
 .footer-menu {
+	color: #FFF;
+	height: 180px;
+	min-width: 1121px;
+	margin: 0 auto;
+	background-color: #2f2f2f;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
