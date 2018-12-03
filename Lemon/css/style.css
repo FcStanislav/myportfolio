@@ -146,7 +146,7 @@ button:hover {
 	margin-top: 80px;
 	width: 1121px;
 	height: 440px;
-	background: url("../img/second-block/Second-image.png") no-repeat right;
+	background: url("../img/second-block/Second-image.jpg") no-repeat right;
 }
 .second-text {
    position: absolute;
@@ -222,7 +222,7 @@ button:hover {
 	margin: 80px auto;
 	width: 1121px;
 	height: 440px;
-	background: url("../img/recipe.png") no-repeat left;
+	background: url("../img/recipe.jpg") no-repeat left;
 }
 .recipe-img {
 	display: inline-block;
@@ -311,7 +311,7 @@ button:hover {
 
 }
 .error-block {
-	background: url("../img/Eror.png") no-repeat center;
+	background: url("../img/Eror.jpg") no-repeat center;
 	position: relative;
 	
 }
@@ -429,7 +429,7 @@ button:hover {
 }
 .popular-now {
 	height: 349px;
-	background: url(../img/sidebar/popular-now.png) no-repeat center;
+	background: url("../img/sidebar/popular-now.jpg") no-repeat center;
 }
 .timeline {
 	margin-top: 50px;
