@@ -1761,6 +1761,7 @@ footer {
 	display: block;
 }
 .banner-size {
+	display: block;
 	color: #000;
 	font-family: 'Geometria';
 	font-weight: 800;	
