@@ -1,0 +1,569 @@
+header {
+   width: 100%;
+   height: 1000px;
+   background: url("../img/header.png") no-repeat center;
+   background-size: cover;
+   padding-top: 30px;
+}
+.title {
+   span {
+      font-family: 'Geometria';
+      font-size:55px;
+      font-weight: 800;
+      font-style: italic;
+      line-height:133px;
+   }
+	position:relative;
+	background:#fff;
+	max-width:555px;
+	width:100%;
+	height:133px;
+	text-align:center;
+	text-transform:uppercase;
+	margin:0 55px 24px;
+	z-index:2;
+}
+
+.title:before {
+	background:url(../img/title-before.png);
+	width:46px;
+	height:133px;
+	content:'';
+	position:absolute;
+	top:0;
+	left:-46px;
+}
+
+.title:after {
+	background:url(../img/title-after.png);
+	width:52px;
+	height:133px;
+	content:'';
+	position:absolute;
+	top:0;
+	right:-52px;
+}
+.wrapper {
+   width: 100%;
+   max-width: 1170px;
+   height: auto;
+   margin: 0 auto;
+}
+.header-nav {
+   position: relative;
+}
+.header {
+   font-family: 'Geometria';
+   font-size: 14px;   
+   position: relative;
+   display: inline-block;
+   margin-right: 4px;
+   background-color: #fff;
+   padding: 26px 10px 30px 68px;
+   border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	-moz-border-top-left-radius: 50px;
+	-moz-border-bottom-left-radius: 50px;
+	-moz-border-top-right-radius: 50px;
+	-moz-border-bottom-right-radius: 50px;
+	-webkit-border-top-left-radius: 50px;
+	-webkit-border-bottom-left-radius: 50px;
+	-webkit-border-top-right-radius: 50px;
+   -webkit-border-bottom-right-radius: 50px;
+   input{
+      width:120px;
+   }
+   img {
+      position: absolute;
+      top: 15px;
+      left: 10px;
+   }
+   &-logo {
+      position: absolute;
+      text-align: center;
+      display: inline-block;
+      width: 177px;
+      height: 80px;
+      background-image: url("../img/header-logo.png");
+   }
+   &-email {
+      margin-left: 420px;
+   }
+   &-cabinet{
+      margin-left: 10px;
+      padding:27px 43px 31px 78px;
+      background-image: -moz-linear-gradient(90deg, rgb(246, 128, 44) 0%, rgb(250, 161, 65) 100%);
+	   background-image: -webkit-linear-gradient(90deg, rgb(246, 128, 44) 0%, rgb(250, 161, 65) 100%);
+      background-image: -ms-linear-gradient(90deg, rgb(246, 128, 44) 0%, rgb(250, 161, 65) 100%);
+      box-shadow: 0 0 0 8px rgba(219, 219, 219, 0.5);
+      p {
+         color:#fff;   
+         font-family: 'Geometria';
+         font-size: 14px; 
+         font-weight: 800;
+	      font-style: normal;
+      }
+      img {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      }
+   }
+   &-language {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 120px;height: 68px;
+      background-image: url("../img/icon-languages.png");
+   }
+   &-block-title {
+      font-family: 'Geometria';
+      padding: 40px 80px;
+      left: 230px;
+      bottom: 130px;
+      position: absolute;
+      width: 535px;
+      height: 167px;
+      background-image: url("../img/text-block-title.png");
+      p {
+         margin-bottom: 5px;
+         font-size: 18px;
+         font-weight: 800;
+      	font-style: normal;
+      }
+      span {
+         font-size: 16px;
+         width: 240px;
+         color: #565656;
+      }
+   }
+   &-content {
+      position: relative;
+      margin-top: 95px;
+      height: 800px;
+      &-img {
+         position: absolute;
+         top: 0;
+         left: -135px;
+         width: 710px;
+         height: 614px;
+         background-image: url("../img/header-content-img.png");
+      }
+      &-title{
+         position: absolute;
+         top: 130px;
+         right: 70px;
+         &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            left: 20px;
+            top: 160px;
+            width: 50px;
+            height: 2px;
+            background-color: #f57c2a;
+         }
+         img {
+            width: 188px;
+            height: 136px;
+            position: absolute;
+            top: -200px;
+            left: 100px;
+
+         }
+         p {
+            font-family: 'Geometria';
+            text-transform: none;
+            position: absolute;
+            top: 150px;
+            right: 10px;
+            text-align: left;
+            font-size: 16px;
+            strong {
+               font-weight: bold;
+            }
+         }
+      }
+      &-buttom {
+         text-align: center;
+         position: relative;
+         top: 330px;
+         left: 500px;
+         display: inline-block;
+         img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+         }
+         span {
+            background-image: -moz-linear-gradient(90deg, rgb(248, 119, 27) 0%, rgb(250, 161, 65) 100%);
+	         background-image: -webkit-linear-gradient(90deg, rgb(246, 119, 27) 0%, rgb(250, 161, 65) 100%);
+            background-image: -ms-linear-gradient(90deg, rgb(246, 119, 27) 0%, rgb(250, 161, 65) 100%);
+            border-top-left-radius: 50px;
+	         border-bottom-left-radius: 50px;
+	         border-top-right-radius: 50px;
+	         border-bottom-right-radius: 50px;
+	         -moz-border-top-left-radius: 50px;
+	         -moz-border-bottom-left-radius: 50px;
+	         -moz-border-top-right-radius: 50px;
+	         -moz-border-bottom-right-radius: 50px;
+	         -webkit-border-top-left-radius: 50px;
+	         -webkit-border-bottom-left-radius: 50px;
+	         -webkit-border-top-right-radius: 50px;
+	         -webkit-border-bottom-right-radius: 50px;
+            display: inline-block;
+            color: #fff;
+            font-family: 'Geometria';
+            font-weight: 800;
+	         font-style: normal;
+            font-size: 18px;
+            padding: 44px 30px 44px 110px;
+         }
+         p {
+            font-family: 'Geometria';
+            position: absolute;
+            top: 60%;
+            right: 60px;
+            color: #fff;
+            font-size: 14px;
+         }
+      }
+      &-aboutus {
+         font-family: 'Geometria';
+         position: relative;
+         top: 300px;
+         left: 860px;
+         background-image: url("../img/schedule.png");
+         width: 218px;
+         height: 225px;
+         img {
+            width: 261px;
+            height: 197px;
+            position: absolute;
+            top: 200px;
+            left: -20px;
+         }
+         p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-60%, -50%);
+            font-size: 53px;
+            font-weight: 800;
+	         font-style: normal;
+         }
+         span {
+            display: block;
+            width: 150px;
+            font-size: 14px;
+            position: absolute;
+            top: 65%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+         }
+         &::before {
+            content:"Дней";
+            display: block;
+            position: absolute;
+            top: 47%;
+            font-size: 14px;
+            font-family: 'Geometria';
+            font-weight: 500;
+	         font-style: normal;
+            color: #f57c2a;
+            left: 57%;
+            transform: translate(-60%, -50%);
+            transform: rotate(-90deg);
+         }
+      }
+   }
+}
+.company {
+   display: flex;
+}
+.about{
+   background-color: #fafbfd;
+   padding-top: 67px;
+   height: 620px;
+   width: 100%;
+   &-company {
+      max-width: 628px;
+      margin-right: 28px;
+      &-content {
+         padding: 40px 35px;
+         background-color: #fff;
+         span {
+            max-width: 628px;
+            font-family: 'Geometria';
+            color: #000;
+            margin-bottom: 20px;
+         }
+      }
+      &-main {
+         &-logo {
+            position: absolute;
+            top: 47%;
+            left: 48%;
+            transform: translate(-50%, -50%);
+         }
+         &-img {
+         position: absolute;
+         top: 20px;
+         left: -25px;
+      }
+      }
+      &-img {
+         position: relative;
+         height: 550px;
+         width: 490px;
+         margin-right: -4px;
+         background-image: url("../img/about-company-movie.png");
+      }
+   }
+}
+// about- end 
+.advantage {
+   padding-top: 22px;
+   height: 797px;
+   width: 100%;
+   background-image: url("../img/advantages-list-bottom/advantage-wrapper.png");
+   background-size: cover;
+   &-title {
+      margin: 0 auto;     
+   }
+   &-content {
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-around;
+      &-elem {
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+         padding: 44px 26px;
+         flex-direction: column;
+         position: relative;
+         background-image: url("../img/advantages-list-bottom/advantage-content.png");
+         width: 240px;
+         height: 313px;
+         &::before{
+               content:" ";
+               position: absolute;
+               top: 30px;
+               left: 50%;
+               transform: translateX(-50%);
+               display: block;
+               background-color: #eef3fa;
+               border-radius: 50%;
+               -moz-border-radius:50%;
+	            -webkit-border-radius:50%;
+               width: 120px;
+               height: 120px;
+               z-index: 0;
+         } 
+         img {
+            z-index: 10;
+         } 
+         p {
+            font-family: 'Geometria';
+            font-size: 16px;
+            font-weight: bold;
+	         font-style: normal;
+         }  
+         span {
+            display: inline-block;
+            height: 60px;
+            overflow: hidden;
+            font-size: 14px;
+            font-family: 'Geometria';
+            text-align: center;
+            color: #575757;
+         }    
+      }
+   }
+   &-step {
+      margin-top: 55px;
+      display: flex;
+      justify-content: center;
+      &-content{
+         &-one {
+            position: relative;
+            width: 257px;
+            height: 164px;
+            padding: 50px 60px;
+            background-image: url("../img/advantages-list-bottom/bg1.png");
+            p {
+               font-family: 'Geometria';
+               font-weight: bold;
+               font-style: normal;
+               font-size: 26px;
+               color: #fff;
+               margin-bottom: 12px;
+               &::before {
+                  content:"";
+                  position: absolute;
+                  top: 46%;
+                  display: block;
+                  width: 165px;
+                  height: 2px;
+                  background-color: #fff;
+               }
+            }
+            &::before{
+               content:"";
+               display: block;
+               background-image: url("../img/advantages-list-bottom/first-child-after.png");
+               position: absolute;
+               width: 62px;
+               height: 164px;
+               top: 0;
+               left: 240px;
+            }
+         }
+         &-two {
+            width: 257px;
+            height: 164px;
+            padding: 50px 60px;
+            background-image: url("../img/advantages-list-bottom/bg2.png");
+            p {
+               font-family: 'Geometria';
+               font-weight: bold;
+               font-style: normal;
+               font-size: 26px;
+               color: #000;
+               border-bottom: 2px solid #000;
+               margin-bottom: 10px;               
+            }
+           
+         }
+         &-three {
+            position: relative;
+            width: 257px;
+            height: 164px;
+            padding: 50px 60px;
+            background-image: url("../img/advantages-list-bottom/bg3.png");
+            p {
+               font-family: 'Geometria';
+               font-weight: bold;
+               font-style: normal;
+               font-size: 26px;
+               color: #fff;
+               border-bottom: 2px solid #fff;
+               margin-bottom: 10px;
+               
+            }
+            &::after{
+               content:"";
+               display: block;
+               background-image: url("../img/advantages-list-bottom/2after.png");
+               position: absolute;
+               width: 62px;
+               height: 164px;
+               top: 0;
+               left: -30px;
+            }
+            &::before{
+               content:"";
+               display: block;
+               background-image: url("../img/advantages-list-bottom/first-child-after.png");
+               position: absolute;
+               width: 62px;
+               height: 164px;
+               top: 0;
+               left: 220px;
+            }
+         }
+         &-four {
+            width: 257px;
+            height: 164px;
+            padding: 50px 60px;
+            border-radius: 10px;
+            -moz-border-radius:10px;
+         	-webkit-border-radius:10px;
+            background-image: url("../img/advantages-list-bottom/bg4.png");
+            p {
+               font-family: 'Geometria';
+               font-weight: bold;
+               font-style: normal;
+               font-size: 26px;
+               color: #000;
+               border-bottom: 2px solid #000;
+               margin-bottom: 10px;
+               
+            }
+            
+         }
+      }
+   }
+}
+//section-end 
+.title-tariffs{
+      margin: 0 auto;
+      margin-bottom: 100px;
+      p {
+         font-family: 'Geometria';
+         text-transform: none;
+         font-size: 16px;
+         margin-top: -30px;
+      }
+   }
+
+.tariffs {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 110px;
+   &-elem {
+      position: relative;
+      height: 250px;
+      width: 277px;
+      background-color: #e5e5e5;
+      border-radius: 10px;
+      -moz-border-radius:10px;
+      -webkit-border-radius:10px;
+      padding: 96px 56px;
+      &-title {
+         position: absolute;
+         width: 244px;
+         height: 113px;
+         top: -55px;
+         left: 20px;
+         background-image: url("../img/tariffs-elem-bg.png");
+         img {
+            top: -35px;
+            left: 80px;
+            position: absolute;
+         }
+         span {
+            font-family: 'Geometria';
+            color: #FFF;
+            position: absolute;
+            top: 55px;
+            left: 55px;
+         }
+      }
+      &-content{
+         p{
+            font-family: 'Geometria';
+            font-size: 16px;
+            line-height: 1.5rem;
+            text-align: center;
+            color: #6a6a6a;
+            strong {
+               color: #000;
+               font-weight: 800;
+	            font-style: normal;
+            }
+         }
+      }
+   }
+   &-buttom {
+      top: 20px;
+      left: -60px;
+      p {
+         position: absolute;
+         bottom: 10px;
+         right: 20px;
+      }
+   }
+}
