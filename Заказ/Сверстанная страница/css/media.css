@@ -198,6 +198,18 @@
 	.form_head {
 		margin:0 auto;
 	}
+	.depozit {
+		justify-content: center;
+	}
+	.create-depozit > span {
+		padding: 30px 30px;
+	}
+	.summ > span {
+		padding: 30px 60px;
+	}
+	.plan > span {
+		padding: 30px 60px;
+	}
 }
 @media (min-width: 280px) and (max-width: 700px) {
 	.title {
@@ -280,7 +292,7 @@
 		justify-content: space-around;
 	}
 	.create-depozit > span {
-		padding: 15px 25px;
+		padding: 30px 10px;
 	}
 	.info-depozit_buttom {
 		font-size: 14px;

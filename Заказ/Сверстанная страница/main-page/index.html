@@ -6,11 +6,80 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Document</title>
    <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" href="css/font/stylesheet.css">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+   <link rel="stylesheet" href="css/font/stylesheet.css">
 </head>
 <body>
    <header>
+      <div class="modal-one">
+            <div class="modal-one-wrapper"></div>
+            <div class="banner">
+                <div class="modal-close"><span></span></div>
+                <img class="list" src="./images/list.png" alt="">
+                <img class="bg-modal-tittle" src="./images/bg-modal-tittle-2.png" alt="">
+                <div class="banner-main-tittle">
+                    <img src="./images/banner-img.png" alt="">
+                    <span>Регистрация</span>
+                </div>
+                <form action="" method="GET">
+                  <div class="banner-contents">
+                     <input type="text" name="email" placeholder="Введите email">
+                  </div>
+                  <div class="banner-contents">
+                     <input type="text" name="email" placeholder="Введите email">
+                  </div>
+                  <div class="banner-contents">
+                     <input type="text" name="email" placeholder="Введите email">
+                  </div>
+                  <div class="banner-buttom">
+                     <img src="./images/banner-copy.png" alt="">
+                     <button type="submit"><span>Зарегистрироваться</span></button>
+                  </div>        
+               </form>
+            </div>
+      </div>
+      <div class="modal-two">
+            <div class="modal-two-wrapper"></div>
+            <div class="two-banner">
+                <div class="modal-two-close"><span></span></div>
+                <img class="list" src="./images/list.png" alt="">
+                <img class="bg-modal-tittle" src="./images/bg-modal-tittle-2.png" alt="">
+                <div class="two-banner-main-tittle">
+                    <img src="./images/banner-img.png" alt="">
+                    <span>FaQ</span>
+                </div>
+                  <div class="two-banner-contents">
+                     <span>Как быстро обробляеться запрос на вывод?</span>
+                     <img  class="modal-2-active" src="./img/modal-2-active.png" alt="">
+                     <p class="two-banner-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptate provident ratione ipsam non ea iure, nam recusandae magni officiis id magnam obcaecati iusto consequatur nisi quasi vitae blanditiis adipisci.</p>
+                  </div>
+                  <div class="two-banner-contents">
+                     <span>Как быстро обробляеться запрос на вывод?</span>
+                     <img  class="modal-2-active" src="./img/modal-2-active.png" alt="">
+                     <p class="two-banner-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptate provident ratione ipsam non ea iure, nam recusandae magni officiis id magnam obcaecati iusto consequatur nisi quasi vitae blanditiis adipisci.</p>
+                  </div>
+                  <div class="two-banner-contents">
+                     <span>Как быстро обробляеться запрос на вывод?</span>
+                     <img  class="modal-2-active" src="./img/modal-2-active.png" alt="">
+                     <p class="two-banner-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptate provident ratione ipsam non ea iure, nam recusandae magni officiis id magnam obcaecati iusto consequatur nisi quasi vitae blanditiis adipisci.</p>
+                  </div>
+                  <div class="two-banner-contents">
+                     <span>Как быстро обробляеться запрос на вывод?</span>
+                     <img class="modal-2-active"  src="./img/modal-2-active.png" alt="">
+                     <p class="two-banner-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptate provident ratione ipsam non ea iure, nam recusandae magni officiis id magnam obcaecati iusto consequatur nisi quasi vitae blanditiis adipisci.</p>
+                  </div>
+                  <div class="modal-two-help">
+                     <p>Не нашли ответ?</p>
+                     <span>Задайте вопрос и наш лучший оператор ответит </span>
+                  </div>
+
+                <div class="two-banner-buttom">
+                    <img src="./images/banner-copy.png" alt="">
+                    <span>Задать вопрос</span>
+                </div>        
+            </div>
+      </div>
       <div class="wrapper">
          <div class="header-nav">
             <div class="header-logo"></div>
@@ -22,7 +91,7 @@
                <img src="./img/icon-password.png" alt="">
                <input type="text" placeholder="Введите пароль">
             </div>
-            <div class="header-cabinet header">
+            <div id="register-button-two" class="header-cabinet header">
                <img src="./img/icon-form-submit.png" alt="">
                <p>Войти в ЛК</p>
             </div>
@@ -40,7 +109,7 @@
                <p>В технологию будущего электричества,которую оценили <br> в <strong>400 000 000 000</strong></p>
                <img src="./img/sheet-2.png" alt="">
             </div>
-            <div class="header-content-buttom">
+            <div id="register-button" class="header-content-buttom">
                <img src="./img/icon-to-register.png" alt="">
                <span>Зарегистрироваться</span>
                <p>и начать зарабатывать</p>
@@ -144,6 +213,8 @@
                <p>Подбери под себя <strong>тариф</strong></p>
             </div>
             <div class="tariffs">
+                  <div class="tariffs-decor-one"></div>
+                  <div class="tariffs-decor-two"></div>
                <div class="tariffs-elem">
                   <div class="tariffs-elem-title">
                      <span>Депозит на 24 часа</span>
@@ -156,7 +227,7 @@
                   </div>
                   <div class="tariffs-elem-buttom">
                      <div class="header-content-buttom tariffs-buttom">
-                        <img src="./img/icon-to-register.png" alt="">
+                        <img src="./img/icon-form-submit.png" alt="">
                         <span>Инвестировать</span>
                         <p>и начать зарабатывать</p>
                      </div>
@@ -174,7 +245,7 @@
                   </div>
                   <div class="tariffs-elem-buttom">
                      <div class="header-content-buttom tariffs-buttom">
-                        <img src="./img/icon-to-register.png" alt="">
+                        <img src="./img/icon-form-submit.png" alt="">
                         <span>Инвестировать</span>
                         <p>и начать зарабатывать</p>
                      </div>
@@ -192,7 +263,7 @@
                   </div>
                   <div class="tariffs-elem-buttom">
                      <div class="header-content-buttom tariffs-buttom">
-                        <img src="./img/icon-to-register.png" alt="">
+                        <img src="./img/icon-form-submit.png" alt="">
                         <span>Инвестировать</span>
                         <p>и начать зарабатывать</p>
                      </div>
@@ -210,7 +281,7 @@
                   </div>
                   <div class="tariffs-elem-buttom">
                      <div class="header-content-buttom tariffs-buttom">
-                        <img src="./img/icon-to-register.png" alt="">
+                        <img src="./img/icon-form-submit.png" alt="">
                         <span>Инвестировать</span>
                         <p>и начать зарабатывать</p>
                      </div>
@@ -223,6 +294,8 @@
    </section>
    <!-- section-end -->
    <section class="statistic">
+      <div class="statistic-decor-one"></div>
+      <div class="statistic-decor-two"></div>
       <div class="wrapper">
          <div class="title statistic-title"><span>Статистика</span></div>
          <div class="statistic-content">

@@ -1569,7 +1569,7 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	z-index: 990;
+	z-index: 10;
 }
 .info-depozit {
 	margin-left: 30px;
@@ -1586,7 +1586,7 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	z-index: 990;
+	z-index: 10;
 }
 .info-depozit_buttom {
 	border-top-left-radius: 50px;
@@ -1628,7 +1628,8 @@ footer {
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	box-sizing: border-box;
-	width: 640px;
+	width: 100%;
+	max-width: 640px;
 	height: 360px;
 	padding: 65px 65px;
 }
@@ -1702,9 +1703,8 @@ footer {
 	-webkit-border-bottom-right-radius: 50px;
 	margin-top: 10px;
 	background-color: #fff;
-	padding: 25px 20px;
+	padding: 25px 20px;	
 }
-
 .banner-buttom span {
 	cursor: pointer;
 	position: absolute;
@@ -1766,7 +1766,6 @@ footer {
 	display: block;
 	width: 20px;
 	transform: rotate(90deg);
-	/* transform: translateY(-5px); */
 	height: 2px;
 	background-color: #000;
 }
