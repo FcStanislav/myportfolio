@@ -279,5 +279,10 @@
    .news-three {
       display: none;
    }
-
+   .footer-list-one {
+      display: none;
+   }
+   .footer-list-two {
+      display: none;
+   }
 }
