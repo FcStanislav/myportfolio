@@ -110,14 +110,15 @@
       display: none;
    }
    .header-content-title{
-      width: 80%;
+      width: 100%;
+      margin: 0;
       right: 0px;
    }
    .header-content-title span{
       font-size: 40px;
    }
    .header-content-buttom {
-      left: 10px;
+      left: 0px;
       top: 350px;
    }
    .header-content-buttom > span {
@@ -285,4 +286,11 @@
    .footer-list-two {
       display: none;
    }
+}
+@media (min-width: 280px) and (max-width: 360px) {
+   .header-content-buttom {
+      transform: scale(0.9);
+      
+   }
+
 }
