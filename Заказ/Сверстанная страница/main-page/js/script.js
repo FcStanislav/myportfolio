@@ -1,4 +1,6 @@
+window.addEventListener("DOMContentLoaded", function () {
 let tabsItem = document.getElementsByClassName("statistic-operation-content"),
+    coins = document.getElementsByClassName("fa-coins"),
     tabsControlWrapper = document.getElementsByClassName("statistic-operation-tabs")[0],
     tabsControl = document.getElementsByClassName("statistic-operation-tab-elem");
 
@@ -6,6 +8,9 @@ tabsControlWrapper.addEventListener("click",(event) => {
    let target = event.target;
    for(let item of tabsControl) {
       item.classList.remove("tab-elem-active")
+   };
+   for (let item of coins) {
+      item.classList.remove("coins-active")
    };
    for(let item of tabsItem) {
       item.classList.remove("statistic-operation-content-active")
@@ -16,9 +21,11 @@ tabsControlWrapper.addEventListener("click",(event) => {
    switch (target) {
       case tabsControl[0]:
          tabsItem[0].classList.add("statistic-operation-content-active")
+         coins[0].classList.add("coins-active")
          break;
       case tabsControl[1]:
          tabsItem[1].classList.add("statistic-operation-content-active")
+         coins[1].classList.add("coins-active")
          break;
    }
 })
@@ -57,3 +64,45 @@ for (let i = 0; i < dopContentActive.length; i++) { // перебирает вс
    modalTwoClose.addEventListener("click", () => {
       modalTwo.classList.remove("two-modal_active");
      });
+});
+
+// slider 
+let sliderImg = document.getElementById("slider-img"),
+    dotsWrap = document.getElementsByClassName("slider-dots")[0],
+    dots = document.getElementsByClassName("dot"),
+    topp = 0,
+    imgWidth = 108;
+    
+sliderImg.style.top = topp + "px";
+slideTo = (direction) => {
+      if (direction == "left") { //если зничение direction = left то мы от left отнимаем ширину картинки
+         topp = topp - imgWidth;
+      }
+      if (direction == "right") topp =topp + imgWidth;
+       sliderImg.style.top = topp + "px";
+}
+
+
+dotsWrap.addEventListener("click", (event) => {
+   let target = event.target; // показывает на какую цель мы нажали
+  for (let item of dots) { //циклом "for of" мы пройдемся по всем элементам из массива dots
+      item.classList.remove("dot-active")
+   } //удалили класс active со всех элементов item
+
+   if (target.classList.contains("dot")) { //contains-содержит. если цель содержит класс "dot" то выполняется условие
+      target.classList.add("dot-active"); // добавиляем  класс той цели на которую нажали
+   }
+   // обрабатывает кнопки. задает позицию
+   switch (target) { //switch заменяет множественные if'ы
+      case dots[0]:
+         topp = 0;
+         break;
+      case dots[1]:
+         topp = -108;
+         break;
+      case dots[2]:
+         topp = -216;
+         break;
+   }
+   sliderImg.style.top = topp + "px"; 
+})

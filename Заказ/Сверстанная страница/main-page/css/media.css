@@ -11,6 +11,15 @@
    .header-content-img {
       left: -50px;
    }
+   .title {
+      width: 100%;
+   }
+   .title::after {
+      display: none;
+   }
+   .title::before {
+      display: none;
+   }
    .header-content-aboutus {
       left: 700px;
    }
@@ -64,8 +73,15 @@
       width: auto;
    }
    .title {
-      width: 80%;
-      right: 0px;
+      width: 100%;
+   }
+
+   .title::after {
+      display: none;
+   }
+
+   .title::before {
+      display: none;
    }
 
    .title > span {
@@ -101,7 +117,7 @@
       font-size: 40px;
    }
    .header-content-buttom {
-      left: 40px;
+      left: 10px;
       top: 350px;
    }
    .header-content-buttom > span {
@@ -109,16 +125,13 @@
       padding: 30px 40px;
    }
    .header-content-buttom > p {
-      right: 30px;
-   }
-   .header-content-buttom> img {
-      display: none;
+      right: 50px;
    }
    .header-content-aboutus{
       display: none;
    }
    .about-company > .title{
-      margin: 0px 55px 24px 55px;
+      margin: 0;
    }
    .about-company>.title>span {
       font-size: 30px;
@@ -152,7 +165,7 @@
       display: none;
    }
    .tariffs-buttom {
-      left: -12px;
+      left: -51px;
       top: 30px;
    }
    .tariffs-buttom > p {
@@ -261,4 +274,10 @@
       left: 100px;
       bottom: -20px;
    }
+   .news-one,
+   .news-two,
+   .news-three {
+      display: none;
+   }
+
 }
