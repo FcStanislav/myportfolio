@@ -151,12 +151,70 @@ header {
   left: 10px;
 }
 .header-language {
+  background-color: #fff;
+   border-top-left-radius: 50px;
+   border-bottom-left-radius: 50px;
+   border-top-right-radius: 50px;
+   border-bottom-right-radius: 50px;
+   -moz-border-top-left-radius: 50px;
+   -moz-border-bottom-left-radius: 50px;
+   -moz-border-top-right-radius: 50px;
+   -moz-border-bottom-right-radius: 50px;
+   -webkit-border-top-left-radius: 50px;
+   -webkit-border-bottom-left-radius: 50px;
+   -webkit-border-top-right-radius: 50px;
+   -webkit-border-bottom-right-radius: 50px;
   position: absolute;
   top: 0px;
   right: 0px;
   width: 120px;
   height: 68px;
-  background-image: url("../img/icon-languages.png");
+  font-family: 'Geometria';
+  font-size: 18px;
+}
+.header-language span {
+  margin-bottom: 26px;
+  display: inline-block;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+.header-language img {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  padding: 15px;
+  transform: translateY(-50%);
+}
+.header-language-elem {
+   padding: 10px 0;
+   margin-bottom: 1px;
+   border-top-left-radius: 50px;
+   border-top-right-radius: 50px;
+   border-bottom-left-radius: 50px;
+   border-bottom-right-radius: 50px;
+   -moz-border-top-left-radius: 50px;
+   -moz-border-bottom-left-radius: 50px;
+   -moz-border-top-right-radius: 50px;
+   -moz-border-bottom-right-radius: 50px;
+   -webkit-border-top-left-radius: 50px;
+   -webkit-border-bottom-left-radius: 50px;
+   -webkit-border-top-right-radius: 50px;
+   -webkit-border-bottom-right-radius: 50px;
+   background-color: rgb(255, 255, 255);
+}
+.header-language-elem-wrapper {
+  display: none;
+}
+.header-language-active {
+  display: block;
+}
+.header-language-elem p {
+  margin-left: 40px;
+  padding: 10px 0 ;
+}
+.header-language-elem p a{
+  text-decoration: none;
+  color: #000;
 }
 .header-block-title {
   font-family: 'Geometria';
@@ -1774,4 +1832,19 @@ footer {
   background-image: -webkit-linear-gradient(90deg, rgb(246, 128, 44) 0%, rgb(250, 161, 65) 100%);
   background-image: -ms-linear-gradient(90deg, rgb(246, 128, 44) 0%, rgb(250, 161, 65) 100%);
   display: block;
+}
+.btn {
+  transition: all 0.3s !important ;
+}
+.btn-a{
+  transition: all 0.3s !important;
+}
+.btn:hover{
+  cursor: pointer;
+  box-shadow: 2px 5px 5px 0 rgb(209, 209, 209);
+  transform: translateY(-5px);
+}
+.btn-a:hover  {
+  background-color: #fff;
+  color: #000;
 }

@@ -105,4 +105,11 @@ dotsWrap.addEventListener("click", (event) => {
          break;
    }
    sliderImg.style.top = topp + "px"; 
-})
+});
+
+let language = document.getElementById("language-togle"),
+    languageWrapper = document.getElementsByClassName("header-language-elem-wrapper")[0];
+
+language.addEventListener("click", function () {
+   languageWrapper.classList.toggle("header-language-active");
+});
