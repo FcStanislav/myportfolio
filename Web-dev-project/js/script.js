@@ -1,4 +1,5 @@
-let tabsItem = document.getElementsByClassName("tabs-item"),
+window.addEventListener("DOMContentLoaded", () => {
+   let tabsItem = document.getElementsByClassName("tabs-item"),
     tabsControlWrapper = document.getElementsByClassName("tabs_control_wrapper")[0],
     tabsControl = document.getElementsByClassName("tabs_control_elem"); //переключатели
 //главные перекючатели
@@ -30,20 +31,28 @@ tabsControlWrapper.addEventListener("click",(event) => {
       
    }
 })
-
-
-
-
 // slider
 let slider = document.getElementsByClassName("slider")[0],
     dotsWrap = document.getElementsByClassName("slider-dots")[0],
     dots = document.getElementsByClassName("slider-dot"),
-    left = -1100,
-    imgWidth = 370;
+    sliderWidth = document.querySelector('.slider-wrapper'),
+    sliderItem = document.querySelectorAll(".slider-item"),
+    left;
+
+let itemWidth;
+
+itemWidth = sliderWidth.clientWidth / 3 - 20;
+
+   if (sliderWidth.clientWidth >= 510 ){
+   sliderItem.forEach(function (item) {
+      item.style.width = itemWidth + "px";
+   });
+}
 
 dotsWrap.addEventListener("click",(event) => {
    let target =event.target;
-   console.log(target);
+   // console.log(itemWidth);
+   // console.log(sliderWidth.clientWidth);
    for(let item of dots){
       item.classList.remove("dot-active")
    }
@@ -55,11 +64,14 @@ dotsWrap.addEventListener("click",(event) => {
          left = 0
          break;
       case dots[1]:
-         left = -1100
+         left = (itemWidth + 20) * 3 * -1;
       break;
       case dots[2]:
-         left = -2200
+         left = (itemWidth + 20) * 3 * -2;
       break;
    }
    slider.style.left = left + "px";
+});
+
+   
 })
