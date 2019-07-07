@@ -87,12 +87,11 @@ header {
 
 }
 .about-me-wrapper {
-    margin-top: 130px;
+    margin: 130px 0;
     position: relative;
 }
 .about-me {
     overflow: hidden;
-    margin-bottom: 150px;
     height: 0;
     transition: ease-in-out 0.5s;
 }
@@ -149,17 +148,16 @@ header {
     border: 3px solid #c97f0e;
 }
 
-.container-main {
-    margin-top: 60px;
-    /* background-color: #fff; */
-}
 .content-main {
     margin-bottom: 40px;
     
 }
+.content-main a {
+    display: block;
+}
 .content-main img {
-    height: 248px;
-    width: 100%;
+    display: block;
+    max-width: 100%;
 }
 .content-main h3 {
     color: #d6870e;
