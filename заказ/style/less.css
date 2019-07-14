@@ -18,7 +18,7 @@ body {
   width: 70px;
   height: 70px;
   position: fixed;
-  top: 77%;
+  top: 85%;
   right: 25px;
   background: #f0f3f2;
   border-radius: 50%;
@@ -114,7 +114,8 @@ body {
 }
 .header-content-nav {
   position: fixed;  
-  z-index: 10;
+  z-index: 999;
+  width: 100%;
   background: #fff;
   padding: 14px 0 12px 0;  
 }
@@ -236,13 +237,13 @@ body {
   background-color: #42318c;
   transition: all .5s;
 }
-.ac-container > div > label:hover > div {
+.ac-container>div>label.open>div {
   border: 2px solid #000;
 }
-.ac-container > div > label:hover > div > span {
+.ac-container>div>label.open>div>span {
   background-color: #000;
 }
-.ac-container > div > label:hover > div > p {
+.ac-container>div>label.open>div>p {
   background-color: #000;
   transform: rotateZ(-90deg);
 }
