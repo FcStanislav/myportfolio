@@ -471,6 +471,39 @@ section {
 }
 // OPTDRINK-END
 
+.garant {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   &-item {
+      width: 33.3%;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      &>div {
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         padding: 20px 0;
+         & .-img {
+            min-height: 105px;
+            & img{
+               display: block;
+               max-width: 100%;               
+            }
+         }
+         & .-txt> {
+            width: 80%;
+            margin-top: 20px;
+            & p {
+               font-size: 1.6rem;
+               text-align: center;
+               line-height: 130%;
+               font-weight: 600;              
+            }
+         }
+      }
+   }
+}
 
 // MEDIA
 
@@ -551,6 +584,12 @@ section {
       & img {
          max-width: 100%
       }
+   }
+}
+.garant-item>div .-txt {
+   width: 85%;
+   & p {
+      font-size: 1.4rem;
    }
 }
 }
@@ -644,6 +683,12 @@ section {
       }
    }
 }
+   .garant-item {
+      width: 50%;
+   }
+   .garant-item>div .-txt{
+      width: 95%;
+   }
 }
 @media (max-width: 439.9px){
    .wrapper {
@@ -696,5 +741,8 @@ section {
          font-size: 2.2rem;
          line-height: 2.5rem;
       }
+   }
+   .garant-item>div .-txt p {
+      font-size: 1.2rem;
    }
 }
